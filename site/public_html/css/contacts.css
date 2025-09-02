@@ -1,0 +1,251 @@
+
+
+.first-section-of-contacts-obg {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.first-section-of-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.map-of-company {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 280px;
+    border: none;
+    border-radius: 10px;
+    flex-grow: 1;
+}
+
+.contacts-and-other {
+    background: #333333;
+    border-radius: 15px;
+    padding: 30px;
+    color: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.name-of-contacts {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+.name-of-contacts i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.telephone-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.telephone-list-item {
+    margin-bottom: 12px;
+}
+
+.link-telephone-list-item {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: block;
+    background: #444444;
+    border: 2px solid transparent;
+}
+
+.link-telephone-list-item:hover {
+    background: #FFD700;
+    color: #333333;
+    border-color: #FFD700;
+    transform: translateX(5px);
+}
+
+.found-us-contacts {
+    margin-bottom: 25px;
+}
+
+.found-us-contacts-name {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+.found-us-contacts-name i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.found-us-contacts-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: #444444;
+    display: block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.found-us-contacts-link:hover {
+    background: #FFD700;
+    color: #333333;
+    border-color: #FFD700;
+    transform: translateX(5px);
+}
+
+.name-of-email {
+    margin-bottom: 20px;
+}
+
+.name-of-email-name {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #FFD700;
+    border-bottom: 2px solid #FFD700;
+    padding-bottom: 10px;
+}
+
+.name-of-email-name i {
+    margin-right: 10px;
+    font-size: 1.3rem;
+}
+
+.name-of-email-link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    border-radius: 8px;
+    background: #444444;
+    display: block;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.name-of-email-link:hover {
+    background: #FFD700;
+    color: #333333;
+    border-color: #FFD700;
+    transform: translateX(5px);
+}
+
+
+.section-header{
+    padding-top: 60px;
+}
+
+/* Адаптивний дизайн */
+@media (max-width: 1024px) {
+    .first-section-of-contacts {
+        gap: 25px;
+    }
+    
+    .map {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .first-section-of-contacts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .map {
+        height: 180px;
+    }
+
+    .contacts-and-other {
+        padding: 25px;
+    }
+
+    .name-of-contacts,
+    .found-us-contacts-name,
+    .name-of-email-name {
+        font-size: 1.3rem;
+    }
+
+    .link-telephone-list-item,
+    .found-us-contacts-link,
+    .name-of-email-link {
+        font-size: 1rem;
+        padding: 10px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-section-of-contacts-obg {
+        padding: 15px;
+    }
+
+    .map-of-company {
+        padding: 15px;
+    }
+
+    .map {
+        height: 160px;
+    }
+
+    .contacts-and-other {
+        padding: 20px;
+    }
+
+    .name-of-contacts,
+    .found-us-contacts-name,
+    .name-of-email-name {
+        font-size: 1.2rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .name-of-contacts i,
+    .found-us-contacts-name i,
+    .name-of-email-name i {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .link-telephone-list-item,
+    .found-us-contacts-link,
+    .name-of-email-link {
+        font-size: 0.95rem;
+        padding: 10px;
+        text-align: center;
+    }
+}
