@@ -1,0 +1,693 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+.to-top {
+    background: white;
+    position: fixed;
+    bottom: 32px;
+    right:25px;
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:25px;
+    color:rgb(0,51,93);
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    border: 2px solid rgb(0,51,93);
+    box-shadow: 0 3px 1px rgb(0,51,93);
+  }
+
+.to-top ion-icon{
+    font-size: 30px;
+}
+  
+  .to-top.active {
+    bottom:85px;
+    pointer-events: auto;
+    opacity:1;
+  }
+
+
+  /* phones */
+  
+.phone-for-popup{
+    background: white;
+    position: fixed;
+    bottom: 13px;
+    right:25px;
+    width:45px;
+    height:45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(0,51,93);
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    border: 2px solid rgb(0,51,93);
+    box-shadow: 0 3px 1px rgb(0,51,93);
+    z-index: 49;
+}
+
+.phone-for-popup:hover{
+    background: rgb(235, 247, 252);
+}
+
+.phone-for-popup ion-icon{
+    font-size: 25px;
+    vertical-align: middle;
+    
+}
+
+.pfp{
+    position: relative;
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+    animation: phoneShake 1s;
+    animation-iteration-count: 8;
+}
+
+@keyframes phoneShake {
+    10%{
+        rotate: 15deg;
+    }
+    20%{
+        rotate: -15deg;
+    }
+    30%{
+        rotate: 15deg;
+    }
+    50%{
+        rotate: 0deg;
+    }
+}
+
+
+.phone-for-popup:active, .to-top:active{
+    box-shadow: 0 0px 0px rgb(0,51,93);
+    transform: translateY(3px);
+}
+
+
+.phone-for-popup.active {
+    bottom:32px;
+    pointer-events: auto;
+    opacity:1;
+    cursor: pointer;
+}
+
+
+
+
+
+
+/* popup phones */
+
+
+.phones-popup{
+    border-radius: 20px;
+    border-bottom-right-radius: 0px;
+    background-color: white;
+    border: 2px solid rgb(0,51,93);
+    color: black;
+    width: min-content;
+    position: fixed;
+    /* bottom: 46px;
+    right: 69px; */
+    bottom: 70px;
+    right: 40px;
+    z-index: 48;
+    display: none;
+    transition: all 1s;
+    box-shadow: 0 3px rgba(0,51,93,0.9);
+    animation: popupTransition 0.3s ease-in-out;
+    border-top-left-radius: 0px ;
+}
+
+
+
+
+@keyframes popupTransition{
+    0%{
+        right: -40px;
+        opacity: 0;
+    }
+    100%{
+        right: 40px;
+        opacity: 1;
+    }
+}
+
+
+.phone-list{
+
+}
+
+.num{
+    
+    
+}
+
+.num:hover{
+    opacity: 0.85;
+}
+
+.num ion-icon{
+    animation: phoneShake 1s;
+    animation-iteration-count: 2;
+    transform-origin: center;
+    color: rgb(0,51,93);
+    padding-left: 10px;
+    transform: translateY(11px);
+}
+
+
+
+
+.leave-request, .phone-1, .phone-2 , .phone-3{
+    display: flex;
+}
+
+
+.phone-link{
+    white-space: nowrap;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(6, 54, 94);
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+
+
+.num1,.num3{
+    background-color: rgb(162, 217, 243);
+}
+
+.num1{
+
+    border-top-right-radius: 18px;
+}
+
+.num4{
+    border-bottom-left-radius: 18px;
+    
+}
+
+.num2,.num4{
+    background-color: rgb(104, 202, 247);
+}
+
+
+@media(max-width:1064.5px){
+
+    .phone-for-popup:hover{
+        background: rgb(255, 255, 255);
+    }
+
+    .to-top {
+        width:52px;
+        height:52px;
+    }
+
+    .to-top.active{
+        bottom: 95px;
+    }
+
+
+    .phone-for-popup{
+        width:52px;
+        height:52px;
+    }
+    
+    .phone-link{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+    
+    .phones-popup{
+        bottom: 70px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.popup-leave-request{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 500;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color:black;
+    padding: 0 20px;
+    /* background: rgba(0, 0, 0, 0.7); */
+    display: none;
+}
+
+
+.popup-leave-request-form-edition{
+    background-color: rgb(182, 231, 253);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color:black;
+    padding: 0 20px;
+    /* background: rgba(0, 0, 0, 0.7); */
+    text-align: center;
+}
+
+
+.return-to-smth{
+    position: fixed;
+    top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.return-to{
+    padding: 12px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: yellow;
+    color: black;
+    border-radius: 20px;
+    margin: 10px 10px;
+    box-shadow: 0 3px 5px rgb(209, 209, 3);
+    transition: all 0.3s ease-in-out;
+    width: 230px;
+}
+
+.return-to:active{
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.return-to:hover{
+    opacity: 0.8;
+}
+
+
+.this-popup-leave-request{
+    width: 600px;
+    height: 530px;
+    background-color: rgb(153, 223, 255);
+    border-radius: 10px;
+    border: 2px solid rgb(5, 38, 65);
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    animation: popupLeaveRequestTransition 0.5s;
+}
+
+
+@keyframes popupLeaveRequestTransition{
+    0%{
+        top: 40px;
+        opacity: 0;
+    }
+    100%{
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+
+.leave-request-logo{
+    width: 100px;
+    display: block;
+    margin: 0px auto;
+}
+
+.text-leave-request{
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.input-request{
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 14px;
+    padding-left: 40px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.input-request:focus{
+    outline: none;
+    box-shadow: 0 0px 12px rgba(22, 91, 148, 0.9);
+}
+
+.label-request ion-icon{
+    font-size: 20px;
+    color: rgb(0,51,93);
+}
+
+.div-request{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+
+
+.label-request{
+    position:absolute;
+    left:0;
+    top:0px;
+    padding:10px 10px;
+}
+
+textarea {
+    resize: none;
+    line-height: 1.6;
+}
+
+
+.btn-leave-request{
+    border: 1px solid rgb(0,51,93);
+    width: 70%;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: rgb(0,51,93);
+    color: white;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.btn-leave-request:hover{
+    opacity: 0.8;
+}
+
+.btn-leave-request:active{
+    transform: scale(0.93);
+}
+
+.close-request{
+    position: absolute;
+    top: 0;
+    right: 14px;
+    cursor: pointer;
+}
+
+.close-request ion-icon{
+    font-size: 35px;
+    padding-top: 14px;
+    color: rgb(0,51,93);
+}
+
+
+
+
+.alert-success{
+    font-size: 15px;
+    color: red;
+    margin-top: 15px;
+    font-weight: 600;
+    display: none;
+    
+}
+
+.thanks__block{
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: 600;
+    display: none;
+}
+
+
+
+.alert-message-thanks{
+    background: white;
+    position: fixed;
+    top: 25px;
+    right:15px;
+    color:rgb(0,51,93);
+    text-decoration: none;
+    transition: all .4s;
+    border: 2px solid rgb(0,51,93);
+    box-shadow: 0 3px 5px rgb(0,51,93);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    padding-right: 0;
+    border-radius: 20px;
+    display: none;
+    animation: appearMessage 0.6s;
+}
+
+
+.alert-message{
+    background: white;
+    position: fixed;
+    top: 25px;
+    right:15px;
+    color:rgb(0,51,93);
+    text-decoration: none;
+    transition: all .4s;
+    border: 2px solid rgb(0,51,93);
+    box-shadow: 0 3px 5px rgb(0,51,93);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    padding-right: 0;
+    border-radius: 20px;
+    display: none;
+    animation: appearMessage 0.6s;
+}
+
+@keyframes appearMessage{
+    0%{
+        opacity: 0;
+        right:-15px;
+    }
+
+    100%{
+        opacity: 1;
+        right:15px;
+    }
+}
+
+
+.close-message-link{
+    padding: 8px 15px;
+    background-color: rgb(0,51,93);
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.close-message-link:hover{
+    background-color: rgb(1, 68, 122);
+}
+
+
+.close-message-link ion-icon{
+    font-size: 22px;
+    color: white;
+    transform: translateY(3px);
+}
+
+
+.message-link{
+    padding: 0 20px;
+}
+
+
+.close-message-link-second{
+    padding: 8px 15px;
+    background-color: rgb(0,51,93);
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.close-message-link-second:hover{
+    background-color: rgb(1, 68, 122);
+}
+
+
+.close-message-link-second ion-icon{
+    font-size: 22px;
+    color: white;
+    transform: translateY(3px);
+}
+
+
+
+
+
+
+
+.fadeTransition{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+  }
+  
+  .fadeTransition.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+
+
+
+  
+  .alert-message-thanks-only-phone{
+    background: white;
+    position: fixed;
+    top: 25px;
+    right:15px;
+    color:rgb(0,51,93);
+    text-decoration: none;
+    transition: all .4s;
+    border: 2px solid rgb(0,51,93);
+    box-shadow: 0 3px 5px rgb(0,51,93);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    padding-right: 0;
+    border-radius: 20px;
+    display: none;
+    animation: appearMessage 0.6s;
+}
+
+
+.alert-message-only-phone{
+    background: white;
+    position: fixed;
+    top: 25px;
+    right:15px;
+    color:rgb(0,51,93);
+    text-decoration: none;
+    transition: all .4s;
+    border: 2px solid rgb(0,51,93);
+    box-shadow: 0 3px 5px rgb(0,51,93);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    padding-right: 0;
+    border-radius: 20px;
+    display: none;
+    animation: appearMessage 0.6s;
+}
+
+
+
+
+
+@media(max-width:639.5px){
+    .div-request{
+        width: 100%;
+    }
+    .btn-leave-request{
+        width: 100%;
+    }
+}
+
+
+@media(max-width:589.5px){
+    .fadeTransitionSecond{
+        position: relative;
+        transform: translateX(150px);
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+      
+      .fadeTransitionSecond.active{
+        transform: translateY(0px);
+        opacity: 1;
+      }
+}
+
+
+@media(max-width:484.5px){
+    .this-popup-leave-request{
+        height: 570px;
+    }
+
+    .alert-message{
+        width: 220px;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    .alert-message-thanks-only-phone{
+        width: 200px;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+
+    .alert-message-thanks{
+        width: 200px;
+        text-align: center;
+        line-height: 1.1;
+    }
+
+    .alert-message-only-phone{
+        width: 220px;
+        text-align: center;
+        line-height: 1.2;
+    }
+}
+
+
+

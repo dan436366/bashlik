@@ -1,0 +1,462 @@
+.header{
+    /* background: rgb(15, 143, 143); */
+    background-color: #1A1A1A;
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,0.7);
+    border: 0px;
+}
+
+
+.first-section-of-contacts-obg{
+    background-color: rgb(198, 235, 252);
+}
+
+
+.first-section-of-contacts{
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 60px 0px;
+}
+
+
+
+
+
+.map-of-company{
+    width: 570px;
+    height: 350px;
+    position: relative;
+}
+
+
+/* .map{
+    width: 100% !important;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+.map-of-company iframe{
+    width: 100% !important;
+    height: 100% !important;
+    padding: 0 20px ;
+    border: 0px;
+}
+
+
+.img-all-sections{
+    width: 70px;
+    transform: translateY(25%);
+}
+
+
+
+
+.name-of-all-sections-header{
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    font-size: 23px;
+    color: rgb(0,51,93);
+    padding-left: 15px;
+}
+
+
+.all-sections-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 75px 0;
+    text-align: center;
+    padding: 0 20px;
+}
+
+
+.contacts-and-other{
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+
+.found-us-contacts-name, .name-of-email-name{
+    font-size: 21px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+
+.name-of-contacts{
+    font-size: 21px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+
+.link-telephone-list-item, .found-us-contacts-link , .name-of-email-link{
+    color: black;
+}
+
+
+.telephone-list-item{
+    padding: 7px 0;
+}
+
+.name-of-contacts ion-icon, .found-us-contacts-name ion-icon , .name-of-email-name ion-icon{
+    font-size: 23px;
+    transform: translateY(4px);
+    padding-right: 3px;
+    color: rgb(0,51,93);
+}
+
+
+
+.second-section-of-contacts-obg{
+    margin: 50px 20px;
+}
+
+
+.second-section-of-contacts{
+    max-width: 1260px;
+    margin: 0 auto;
+    font-family: 'Manrope', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(0,51,93);
+    border-radius: 30px;
+    padding: 50px;
+    color: white;
+}
+
+
+.leave-request-or-something-else{
+    font-size: 15px;
+}
+
+
+.leave-request-or-something-else-btn{
+    font-size: 15px;
+    /*  */
+}
+
+.lr-or-se-link{
+    padding: 10px 30px;
+    background-color: rgb(251, 255, 0);
+    border-radius: 20px;
+    color: black;
+    font-weight: 600;
+    box-shadow: 0 0px 10px white;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.lr-or-se-link:hover{
+    box-shadow: 0 0px 12px white;
+    opacity: 0.9;
+}
+
+
+
+
+
+
+
+
+
+
+
+.container-services{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container-services .service-one-to-four{
+    flex: 1 0 44%;
+}
+
+.service-one-to-four{
+    display: flex;
+    border: 1px solid rgb(204, 204, 204);
+    box-shadow: 0 0 10px rgb(120, 186, 240);
+    border-radius: 12px;
+    padding: 30px;
+    margin: 20px;
+    background-color: rgb(158, 224, 255);
+    background-color: rgb(178, 228, 252);
+    transition: all 0.15s ease-in-out;
+}
+
+.service-logo ion-icon{
+    font-size: 70px;
+    color: rgb(0,51,93);
+}
+
+
+.description-service{
+    padding-left: 30px;
+}
+
+.name-of_service{
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.item-of-list_service{
+    display: flex;
+    font-size: 15px;
+    padding: 3px 0;
+}
+
+
+.point-for-iols ion-icon{
+    font-size: 20px;
+    color: rgb(0,51,93);
+    padding-right: 10px;
+}
+
+
+.take-service-btn{
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(251, 255, 0);
+    box-shadow: 0 0px 10px rgb(208, 255, 0);
+    padding: 10px 20px;
+    text-align: center;
+    width: 100%;
+    color: black;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.take-service-btn:hover{
+    box-shadow: 0 0px 10px rgb(255, 255, 0);
+    opacity: 0.7;
+}
+
+.take-service{
+    margin-top: 20px;
+    display: flex;
+    max-width: 270px;
+}
+
+.take-service .take-service-btn{
+    flex-grow: 1;
+}
+
+
+.service-one-to-four:hover{
+    box-shadow: 0 0px 15px rgb(59, 142, 209);
+}
+
+
+
+
+@media(max-width:958.5px){
+    .all-sections-header{
+        margin: 50px 0;
+    }
+
+    .contacts-and-other{
+        
+    }
+
+    .first-section-of-contacts{
+        padding: 50px 0px;
+    }
+
+    .service-one-to-four{
+        flex-direction: column;
+    }
+    .description-service{
+        padding-left: 0px;
+    }
+
+    .service-logo ion-icon{
+        margin-bottom: 10px;
+    }
+}
+
+
+@media(max-width:858.5px){
+    .map-of-company{
+        width: 100%;
+    }
+
+    .contacts-and-other{
+        margin-top: 30px;
+        
+    }
+}
+
+
+@media(max-width:735.5px){
+    .second-section-of-contacts{
+        display: block;
+        text-align: center;
+        padding: 30px 40px;
+    }
+    
+
+    .leave-request-or-something-else-btn{
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media(max-width:412.5px){
+
+    .noash{
+        width: min-content;
+    }
+}
+
+
+
+
+
+
+
+
+/* referral */
+/*///////////////////////////////////////////////////////////////////////////////////*/
+
+
+
+
+.referral-program{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+.form-question-referral{
+    width: 100%;
+}
+
+
+.txt-for-the-referral-question{
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+
+.referral-name{
+    padding: 12px;
+    font-size: 15px;
+    background-color: none;
+    width: 100%;
+    display: block;
+    padding-left: 40px;
+    background-color: rgb(210, 241, 255);
+    color: black;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+    
+}
+
+.referral-name::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+
+
+.referral-phone{
+    padding: 12px;
+    font-size: 15px;
+    background-color: none;
+    width: 100%;
+    display: block;
+    padding-left: 40px;
+    background-color: rgb(210, 241, 255);
+    color: black;
+    font-weight: 500;
+    border-bottom: 2px solid black;
+}
+
+.referral-phone::placeholder{
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+
+.referral-name:focus, .referral-phone:focus{
+    outline: none;
+}
+
+
+.leave-request-referral{
+    width: 350px;
+    position: relative;
+    margin: 10px 0;
+}
+
+
+
+.label-referral{
+    position:absolute;
+    left:0;
+    top:0px;
+    padding:10px 10px;
+}
+
+
+.label-referral ion-icon{
+    font-size: 20px;
+    color: rgb(0,51,93);
+}
+
+
+
+.submit-referral{
+    padding: 14px 12px;
+    font-size: 15px;
+    background-color: rgb(0,51,93);
+    width: 100%;
+    display: block;
+    color: white;
+    font-weight: 500;
+    margin-top: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 2px rgba(0,51,93,0.5);
+    letter-spacing: 0.6px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.submit-referral:active{
+    transform: translateY(4px);
+    box-shadow: none;
+}
+
+.submit-referral:hover{
+    opacity: 0.9;
+}
+
+
+@media(max-width:392.5px){
+
+    .leave-request-referral{
+        width: 100%;
+    }
+
+
+
+}

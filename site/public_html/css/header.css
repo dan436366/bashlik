@@ -1,0 +1,157 @@
+header{
+    z-index: 100;
+    transition: filter 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+.line-menu{
+    display: none;
+    
+}
+.close_menu{
+    visibility: hidden;
+    text-align: center;
+    opacity: 0;
+}
+
+
+@media (max-width:959.5px) {
+
+    header.active{
+        position: fixed;
+        width: 100%;
+    }
+
+    main.active{
+        margin-top: 95px;
+        
+    }
+
+    body.active{
+        overflow: hidden;
+        position: fixed;
+    }
+
+
+    .social-networks-menu{
+        justify-content: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+   
+
+    .item_menu{
+        visibility: visible;
+        opacity: 1;
+        text-align: center;
+        transition: all 0.5s ease 0s;
+    }
+
+    .line-menu{
+        display: block;
+        margin-right: 10px;
+        transition: all 0.4s ease 0s;
+        color: #FFED4A;
+        background: #3b3b3b;
+        border: 1px solid #FFED4A;
+    }
+
+    header ion-icon{
+        font-size: 30px;
+    }
+
+
+    .header__menu{
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background: rgb(15, 143, 143);
+        background-color: #1A1A1A;
+        padding: 130px 0px 0px 0px;
+        transition: all 0.55s ease 0s;
+    }    
+    .menu__list{
+        display: block;
+        text-align: center;
+        
+    }
+    .menu__item{
+        margin-bottom: 45px;
+        
+        
+    }
+
+    .menu__link{
+        font-size: 17px;
+    }
+
+    .item_menu.active{
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+    }
+
+    /* .header.active{
+        position: fixed;
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+    } */
+
+
+    .close_menu.active{
+        visibility: visible;
+        opacity: 1;
+        transition: all 0.4s ease 0s;
+    }
+
+    .header__menu.active{
+        visibility: visible;
+        right: 0;
+        
+    }
+
+    .link{
+        margin-right: -5px;
+    }
+  
+    
+}
+@media (max-width:1300px) {
+    .header__container{
+        
+        margin: 0 5px;
+        
+        
+       
+    }
+
+    .menu__list{
+        gap: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .link{
+        display: none;
+    }
+    .border{
+        width: 106px;
+    }
+}
+
+
+@media (max-height:417.5px) {
+    .social-networks-menu{
+        display: none;
+    }
+    
+}

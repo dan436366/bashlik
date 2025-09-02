@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Продаж та монтаж обладнання систем відеоспостереження, домофонії, охоронно-пожежної сигналізації, контролю доступу.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=
+        , initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo-2.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+
+        
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/other-things.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/for-header-no-shadow.css">
+        <link rel="stylesheet" href="css/services.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        
+        <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+        <title>K&K Security</title>
+    </head>
+    <body>
+        <div class="loader-container">
+            <div class="loader">
+                <div class="loader2">
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <a href="index.html" class="header__logo">
+                        <img src="img/logoburger bashlik without text.png" alt="" class="burger__logo">
+                    </a>
+                    <nav class="header__menu menu">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="index.html" class="menu__link">Головна</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="https://security-market.in.ua/ua/" class="menu__link" target="_blank">Каталог</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="services.html" class="menu__link active-menu__link">Послуги</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="contacts.html" class="menu__link">Контакти</a>
+                            </li>
+                            <li>
+                                <div class="social-networks-menu">
+                                    <div class="instagram network">
+                                        <a href="https://www.instagram.com/kik.security/" class="inst"><ion-icon name="logo-instagram"></ion-icon></a>
+                                    </div>
+                                    <div class="facebook network">
+                                        <a href="https://www.facebook.com/profile.php?id=100076675435425" class="faceb"><ion-icon name="logo-facebook"></ion-icon></a> 
+                                    </div>
+                                    <div class="telegram network">
+                                        <a href="https://t.me/kiksecurity" class="telega"><ion-icon name="paper-plane-outline"></ion-icon></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                    </nav>
+
+                    
+
+                    <div class="header__action">
+                        <div type="button" class="btn__question border" onclick="leaveRequest()">
+                            <div class="txt-before">Залишити заявку</div>
+                        </div>
+                        <button type="button" class="btn__question link" onclick="location.href= '#four-section'">
+                            Підписатись на розсилку 
+                        </button>
+                        <button id="menu_btn" type="button" class="btn__question line-menu">
+                            <ion-icon name="menu-outline" class="item_menu"></ion-icon>
+                            
+                            <ion-icon name="close-outline" class="close_menu"></ion-icon>
+                        </button>
+                        
+                    </div>
+                </div>
+            </header>
+            <main class="page">
+                <div class="main-content">
+
+                    <!-- <div class="container-services">
+                    </div> -->
+
+                    <section class="services-section">
+                        <div class="container-services">
+                            <div class="section-header">
+                                <h2 class="section-title">Наші послуги</h2>
+                            </div>
+                            
+                            <div class="services-grid">
+                                <div class="service-card">
+                                    <div class="service-content">
+                                        <div class="service-icon-wrapper">
+                                            <span class="service-icon">📹</span>
+                                        </div>
+                                        <h3 class="service-title">Системи відеоспостереження</h3>
+                                        <ul class="service-list">
+                                            <li class="service-item">Монтаж систем відеоспостереження</li>
+                                            <li class="service-item">Налагодження обладнання та програмного забезпечення</li>
+                                            <li class="service-item">Сервісне обслуговування і технічна підтримка</li>
+                                        </ul>
+                                    </div>
+                                    <button class="order-btn">Замовити</button>
+                                </div>
+
+                                <div class="service-card">
+                                    <div class="service-content">
+                                        <div class="service-icon-wrapper">
+                                            <span class="service-icon">🔑</span>
+                                        </div>
+                                        <h3 class="service-title">Системи контролю доступу</h3>
+                                        <ul class="service-list">
+                                            <li class="service-item">Монтаж систем контролю доступу</li>
+                                            <li class="service-item">Налагодження роботи зчитувачів, карток і ключів</li>
+                                            <li class="service-item">Сервісне обслуговування систем контролю доступу</li>
+                                        </ul>
+                                    </div>
+                                    <button class="order-btn">Замовити</button>
+                                </div>
+
+                                <div class="service-card">
+                                    <div class="service-content">
+                                        <div class="service-icon-wrapper">
+                                            <span class="service-icon">🚨</span>
+                                        </div>
+                                        <h3 class="service-title">Охоронна сигналізація</h3>
+                                        <ul class="service-list">
+                                            <li class="service-item">Монтаж охоронних сигналізацій</li>
+                                            <li class="service-item">Налагодження датчиків та центральних блоків</li>
+                                            <li class="service-item">Підключення до пульта цілодобово спостереження охоронної компанії</li>
+                                            <li class="service-item">Сервісне обслуговування охоронних систем</li>
+                                        </ul>
+                                    </div>
+                                    <button class="order-btn">Замовити</button>
+                                </div>
+
+                                <div class="service-card">
+                                    <div class="service-content">
+                                        <div class="service-icon-wrapper">
+                                            <span class="service-icon">💻</span>
+                                        </div>
+                                        <h3 class="service-title">Комп'ютерні мережі</h3>
+                                        <ul class="service-list">
+                                            <li class="service-item">Монтаж локальних мереж</li>
+                                            <li class="service-item">Сервісне обслуговування та підтримка мережевої інфраструктури</li>
+                                        </ul>
+                                    </div>
+                                    <button class="order-btn">Замовити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+
+                    
+                    <div class="second-section-of-contacts-obg">
+                        <div class="second-section-of-contacts">
+                            <div class="leave-request-or-something-else">
+                                Залишилися питання чи ви б хотіли зв’язатись з нами?
+                            </div>
+                            <div class="leave-request-or-something-else-btn">
+                                <span class="lr-or-se-link" onclick="leaveRequest()">
+                                    Залишити питання
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="fourth-section" id="four-section">
+                        <div class="subs-on-email">
+                            <div class="head-of-subs">
+                                Підписатись на розсилку
+                            </div>
+                            <div class="text-for-subs-obg">
+                                <div class="text-for-subs">
+                                    Підпишись на розсилку та отримуй новини про знижки на послуги і товари нашого магазину
+                                    <a href="https://security-market.in.ua/ua/" class="link-on-shop">"Security-Market"</a> 
+                                </div>
+                            </div>
+                            
+                            <form class="form-subs-on-email" method="post" id="email-or-phone-form">
+                                <input type="text" placeholder="Введіть email або номер телефону" class="enter-email" id="emailPhone" name="emailPhone">
+                                <input type="submit" value="Підписатись" class="submit-email" id="submit-email">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="fifth-section">
+                        <div class="fifth-section-obg">
+                            <div class="slider-img">
+                                <div class="slider-img-tracker">
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider1.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider2.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider3.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider4.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider5.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider6.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider7.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider8.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider9.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider10.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider1.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider2.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider3.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider4.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider5.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider6.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider7.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider8.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider9.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                    <div class="slide-img">
+                                        <img src="img/slider-img-photo/slider10.jpg" alt="" class="img-slider-photo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <div class="footer-div">
+                    <div class="footer-first">
+                        <div class="location">
+                            <div class="lc-ft">
+                                <ion-icon name="location"></ion-icon>
+                            </div>
+                            <div class="lc-ft-text">
+                                <div class="lc-ft-head">
+                                    Знайти нас
+                                </div>
+                                <div class="street">
+                                    <a href="https://goo.gl/maps/sgyzzTcE5Yv5NikX9" class="street-of-directory">Вул. Іллєнка 27/6, Черкаси, Україна</a>
+                                    
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="phone-footer">
+                            <div class="lc-ft">
+                                <ion-icon name="call"></ion-icon>
+                            </div>
+                            <div class="lc-ft-text">
+                                <div class="lc-ft-head">
+                                    Зв'язатись
+                                </div>
+                                <div class="street">
+                                    <ul class="phones-footer">
+                                        <li class="numbers-of-phones">
+                                            <a href="tel:+380672188860" class="phone-link-footer">+38(067) 218-88-60</a>
+                                            <span class="select-phone" onclick="selectPhone()">
+                                                <ion-icon name="chevron-down-circle"></ion-icon>
+                                            </span>
+                                        </li>
+                                        <li class="numbers-of-phones num-of-ph">
+                                            <a href="tel:+380938188860" class="phone-link-footer">+38(093) 818-88-60</a>
+                                        </li>
+                                        <li class="numbers-of-phones num-of-ph num-of-ph2">
+                                            <a href="tel:+380472723444" class="phone-link-footer">+38(0472) 72-34-44</a>
+                                        </li>
+                                    </ul>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mail-footer">
+                            <div class="lc-ft">
+                                <ion-icon name="mail-open"></ion-icon>
+                            </div>
+                            <div class="lc-ft-text">
+                                <div class="lc-ft-head">
+                                    Email
+                                </div>
+                                <div class="street">
+                                    <a href="mailto:alex@kik.net.ua" class="write-an-email">alex@kik.net.ua</a>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                    <div class="line-foot">
+                        <div class="line-footer"></div>
+                    </div>
+                    <div class="footer-second">
+                        <div class="ft-sec-first">
+                            <img src="img/logoburger.png" alt="" class="kik-security-photo">
+                            <div class="text-about-company-footer">
+                                Продаж та монтаж обладнання систем відеоспостереження, домофонії, охоронно-пожежної сигналізації, контролю доступу.
+                            </div>
+                            <div class="follow-us">
+                                Слідкуйте за новинами
+                            </div>
+                            <div class="social-networks-menu-footer">
+                                <div class="instagram network network-footer">
+                                    <a href="https://www.instagram.com/kik.security/" class="inst"><ion-icon name="logo-instagram"></ion-icon></a>
+                                </div>
+                                <div class="facebook network network-footer">
+                                    <a href="https://www.facebook.com/profile.php?id=100076675435425" class="faceb"><ion-icon name="logo-facebook"></ion-icon></a> 
+                                </div>
+                                <div class="telegram network network-footer">
+                                    <a href="https://t.me/kiksecurity" class="telega"><ion-icon name="paper-plane-outline"></ion-icon></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ft-sec-second">
+                            <div class="company-text">
+                                Компанія
+                            </div>
+                            <ul class="menu__list-footer">
+                                <li class="menu__item-footer">
+                                    <a href="index.html" class="menu__link-footer">Головна</a>
+                                </li>
+                                <li class="menu__item-footer">
+                                    <a href="https://security-market.in.ua/ua/" class="menu__link-footer" target="_blank">Каталог</a>
+                                </li>
+                                <li class="menu__item-footer">
+                                    <a href="services.html" class="menu__link-footer">Послуги</a>
+                                </li>
+                                <li class="menu__item-footer">
+                                    <a href="contacts.html" class="menu__link-footer">Контакти</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="ft-sec-third">
+                            <div class="company-text">
+                                Графік роботи
+                            </div>
+                            <div class="lists-footer">
+                                <ul class="menu__list-footer">
+                                    <li class="menu__item-footer">
+                                        Понеділок
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        Вівторок
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        Середа
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        Четвер
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        П'ятниця
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        Субота
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        Неділя
+                                    </li>
+                                </ul>
+                                <ul class="menu__list-footer menu__list-footer2">
+                                    <li class="menu__item-footer">
+                                        9:00 - 18:00
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        9:00 - 18:00
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        9:00 - 18:00
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        9:00 - 18:00
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        9:00 - 18:00
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        Вихідний
+                                    </li>
+                                    <li class="menu__item-footer">
+                                        Вихідний
+                                    </li>
+                                </ul>
+                            </div>
+
+                            
+                            
+                        </div>
+                        <div class="ft-sec-fourth">
+                            <div class="company-text">
+                                Залиши заявку
+                            </div>
+                            <div class="text-company-text">
+                                Залишіть заявку на зворотній дзвінок. Наш менеджер миттєво зателефонує Вам.
+                            </div>
+                            <form class="form-subs-on-email-footer" method="post" id="only-phone-form">
+                                <input type="number" placeholder="Введіть номер телефону" class="enter-email-footer" id="onlyPhone" name="onlyPhone">
+                                <input type="submit" value="➤" class="submit-email-footer" id="only-phone-submit">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-third">
+                        Copyright © 2025, All Right Reserved K&K Security
+                    </div>
+                </div>
+            </footer>
+            <div class="other-things">
+
+
+                <a href="#" class="to-top">
+                    <!-- <i class="fas fa-chevron-up"></i> -->
+                    <ion-icon name="chevron-up-outline"></ion-icon>
+                </a>
+                <!-- button on top  -->
+
+                <div class="phone-for-popup" onclick="phonePopup()">
+                    <div class="pfp">
+                        <ion-icon name="call-outline"></ion-icon>
+                    </div>
+                    
+
+                </div>
+
+                <div class="phones-popup" id="phone-popup">
+                    <ul class="phone-list">
+                        <li class="num num1">
+                            <div class="leave-request">
+                                <ion-icon name="call"></ion-icon>
+                                <span class="leave-request-link phone-link" onclick="leaveRequest()">Замовити дзвінок</span>
+                            </div>
+                        </li>
+                        <li class="num num2">
+                            <div class="phone-1">
+                                <ion-icon name="call"></ion-icon>
+                                <a href="tel:+380672188860" class="phone-1-link phone-link">+38(067) 218-88-60</a>
+                            </div>
+                        </li>
+                        <li class="num num3">
+                            <div class="phone-2">
+                                <ion-icon name="call"></ion-icon>
+                                <a href="tel:+380938188860" class="phone-2-link phone-link">+38(093) 818-88-60</a>
+                            </div>
+                        </li>
+                        <li class="num num4">
+                            <div class="phone-3">
+                                <ion-icon name="call"></ion-icon>
+                                <a href="tel:+380472723444" class="phone-3-link phone-link">+38(0472) 72-34-44</a>
+                            </div>
+                        </li> 
+                    </ul>     
+                </div>
+
+
+                <div class="popup-leave-request">
+                    <div class="this-popup-leave-request">
+                        <div class="close-request">
+                            <ion-icon name="close"></ion-icon>
+                        </div>
+                        <img src="img/logoburger.png" alt="" class="leave-request-logo">
+                        <div class="text-leave-request">
+                            Вкажіть ваші контактні данні та ваше питання
+                        </div>
+                        <form class="form-leave-request" id="leave-request_form" method="post">
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="person-circle"></ion-icon>
+                                </label>
+                                <input type="text" class="input-request input-request-name" placeholder="Ваше ім'я" id="user_name" name="user_name" required>
+                            </div>
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="call"></ion-icon>
+                                </label>
+                                <input type="tel" class="input-request input-request-phone" placeholder="Ваш номер телефону" id="user_phone" name="user_phone" required>
+                            </div>
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="filter"></ion-icon>
+                                </label>
+                                <select class="input-request" name="user_commer" id="user_commer">
+                                    <option value="Приватна власність" selected>Приватна власність</option>
+                                    <option value="Комерційний об'єкт" selected>Комерційний об'єкт</option>
+                                    <option value="Інше" selected>Інше</option>
+                                    <option value="Інше" selected>Виберіть об'єкт</option>
+                                </select>
+                            </div>
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="help-circle"></ion-icon>
+                                </label>
+                                <textarea class="input-request" placeholder="Ваше питання.." name="user_question" id="user_question"></textarea>
+                            </div>
+
+                            <input type="button" class="btn-leave-request" value="Залишити заявку" id="btn-send-request">
+
+
+                            <div class="after-success-send">
+                                <div class="alert-success">
+                                    Обов'язково заповніть поля ім'я та номер телефону.
+                                </div>
+                                <div class="thanks__block">
+                                    <div class="thanks">
+                                        Дякуємо за заявку!
+                                    </div>
+                                    <p>
+                                        Найближчим часом з вами зв'яжеться наш менеджер.
+                                    </p>
+                            </div>
+                            </div>
+                        </form>
+
+                        
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="alert-message-thanks">
+                    <div class="message-link">
+                        Дякуємо за підписку!
+                    </div>
+                    <div class="close-message-link" onclick="closeEmailMessage()">
+                        <ion-icon name="close"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="alert-message">
+                    <div class="message-link">
+                        Форма не може бути пустою!
+                    </div>
+                    <div class="close-message-link-second" onclick="closeEmailMessageSecond()">
+                        <ion-icon name="close"></ion-icon>
+                    </div>
+                </div>
+
+
+
+
+                <div class="alert-message-thanks-only-phone">
+                    <div class="message-link">
+                        Дякуємо за заявку!
+                    </div>
+                    <div class="close-message-link" onclick="closeEmailMessage()">
+                        <ion-icon name="close"></ion-icon>
+                    </div>
+                </div>
+
+                <div class="alert-message-only-phone">
+                    <div class="message-link">
+                        Форма не може бути пустою!
+                    </div>
+                    <div class="close-message-link-second" onclick="closeEmailMessageSecond()">
+                        <ion-icon name="close"></ion-icon>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <script src="https://unpkg.com/imask"></script>
+        <script src="js/script.js"></script>
+        <script src="js/script2.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/common.js"></script>
+        <!-- <script src="js/common-email-or-phone.js"></script> -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+</html>

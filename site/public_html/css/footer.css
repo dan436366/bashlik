@@ -1,0 +1,429 @@
+footer{
+    background-color: #2A2A2A;
+    font-family: 'Manrope', sans-serif;
+    font-size: 14px;
+    color:white;
+    transition: filter 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+}
+
+
+.footer-div{
+    
+    
+    padding-top: 60px;
+}
+
+.line-foot{
+   padding: 30px 5px;
+}
+
+.line-footer{
+    width: 100%;
+    background-color: #FFED4A;
+    height: 1px;
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+
+.footer-first{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+.footer-second{
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+
+
+.location,.phone-footer,.mail-footer{
+    display: flex;
+}
+
+.phone-footer,.mail-footer{
+    padding-left: 150px;
+}
+
+.lc-ft ion-icon{
+    color: #FFED4A;
+    font-size: 35px;
+    padding-right: 10px;
+    padding-top: 8px;
+}
+
+
+.lc-ft-head{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.street{
+    white-space: nowrap;
+}
+
+.numbers-of-phones{
+    padding: 5px 0;
+}
+
+.phones-footer{
+    transform: translateY(-9px);
+}
+
+
+
+.phone-link-footer,.street-of-directory,.write-an-email{
+    text-decoration: none;
+    color: black;
+    color: rgb(59, 59, 59);
+    color: white;
+}
+
+.select-phone{
+    
+}
+
+.select-phone ion-icon{
+    color: #FFED4A;
+    font-size: 22px;
+    padding-left: 5px;
+    transform: translateY(4px);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.num-of-ph{
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.ft-sec-first{
+    width: 315px;
+}
+
+
+.kik-security-photo{
+    width: 100px;
+    /* display: block;
+    margin: 0 auto; */
+}
+
+
+.text-about-company-footer{
+    font-size: 14px;
+    line-height: 2;
+    margin-top: -15px;
+    color: rgb(59, 59, 59);
+    color: white;
+}
+
+
+.follow-us{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+
+.social-networks-menu-footer{
+    display: flex;
+}
+
+
+.network-footer{
+    padding: 20px 8px;
+}
+
+.network-footer ion-icon{
+    font-size: 25px;
+    color: #1A1A1A;
+    border-radius: 50%;
+    background-color: #FFED4A;
+    padding: 8px;
+}
+
+.instagram{
+    padding-left: 0;
+}
+
+
+.company-text{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.company-text::after{
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #FFED4A;
+    margin-bottom: 27px;
+    margin-top: 7px;
+}
+
+
+.menu__item-footer{
+    padding: 7px 0;
+    color: rgb(59, 59, 59);
+    color: white;
+}
+
+.menu__link-footer{
+    color: rgb(59, 59, 59);
+    color: white;
+    text-decoration: none;
+    opacity: 1;
+    display: inline-block;
+    position: relative;
+    font-weight: 500;
+}
+
+.menu__link-footer:hover{
+    color: #FFED4A;
+}
+
+.menu__link-footer:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #FFED4A;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+
+.menu__link-footer:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.ft-sec-second{
+    padding: 0 65px;
+}
+
+.lists-footer{
+    display: flex;
+}
+
+.menu__list-footer2{
+    padding-left: 20px;
+}
+
+.ft-sec-fourth{
+    padding-left: 100px;
+}
+
+.text-company-text{
+    width: 305px;
+    color: rgb(59, 59, 59);
+    color: white;
+}
+
+
+
+
+
+
+
+.form-subs-on-email-footer{
+    margin-top: 30px;
+}
+
+
+.enter-email-footer{
+    padding: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 270px;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    transition: all 0.3s ease-in-out;  
+    border: 1px solid rgb(172, 172, 172);
+    z-index: 2;
+}
+
+.enter-email-footer:focus{
+    outline: none;
+    border: 1px solid #FFED4A;
+}
+
+
+
+.submit-email-footer{
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border: none;
+    background: #FFED4A;
+    padding: 11.5px 15px;
+    color: #1A1A1A;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: -5px 0 #FFED4A;
+    vertical-align: middle;
+    transform: translateY(-1px);
+}
+
+.submit-email-footer:hover{
+    opacity: 0.8;
+}
+
+
+.footer-third{
+    color: white;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(3, 81, 145);
+    background-color: #1A1A1A;
+    margin-top: 50px;
+}
+
+
+
+
+@media(max-width:1369.5px){
+    .line-foot{
+        padding: 40px 50px;
+    }
+
+    .footer-first{
+        padding: 0 50px;
+    }
+
+    .footer-second{
+        padding: 0 50px;
+    }
+
+    .ft-sec-fourth{
+        padding-left: 50px;
+    }
+}
+
+
+@media(max-width:1256.5px){
+    .enter-email-footer{
+        width: 450px;
+    }
+
+    .ft-sec-fourth{
+        padding-left: 0;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:1061.5px){
+    .footer-first{
+        display: block;
+    }
+
+    .location,.phone-footer,.mail-footer{
+        padding: 15px 5px;
+    }
+
+}
+
+@media(max-width:883.5px){
+    .enter-email-footer{
+        width: 270px;
+    }
+
+    .ft-sec-fourth{
+        padding-left: 50px;
+        margin-top: 0px;
+    }
+
+}
+
+@media(max-width:708.5px){
+    .ft-sec-second{
+        padding-right: 0;
+    }
+}
+
+
+@media(max-width:650.5px){
+    .footer-second{
+        display: block;
+    }
+
+    .ft-sec-fourth{
+        padding-left: 0px;
+    }
+
+    .ft-sec-second{
+        padding-left: 0;
+    }
+
+    .ft-sec-third,.ft-sec-fourth{
+        margin-top: 20px;
+    }
+
+    .line-foot{
+        padding: 40px 20px;
+    }
+
+    .location,.phone-footer,.mail-footer{
+        padding: 15px 0px;
+    }
+
+    .footer-first{
+        padding: 0 20px;
+    }
+
+    .footer-second{
+        padding: 0 20px;
+    }
+
+    .ft-sec-first{
+        width: 100%;
+    }
+
+    .text-about-company-footer{
+        padding-right: 20px;
+    }
+    
+
+    .enter-email-footer{
+        width: 400px;
+    }
+
+}
+
+@media(max-width:539.5px){
+    .enter-email-footer{
+        width: 300px;
+    }
+}
+
+@media(max-width:427.5px){
+    .enter-email-footer{
+        width: 250px;
+    }
+}
+
+
+@media(max-width:369.5px){
+    .enter-email-footer{
+        width: 225px;
+    }
+
+    .text-company-text{
+        width: 295px;
+    }
+}

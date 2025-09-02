@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Продаж та монтаж обладнання систем відеоспостереження, домофонії, охоронно-пожежної сигналізації, контролю доступу.">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=
+        , initial-scale=1.0">
+        <link rel="shortcut icon" href="img/logo-2.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/slider.css">
+        <link rel="stylesheet" href="css/other-things.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+        
+        <script src="https://kit.fontawesome.com/a54d2cbf95.js"></script>
+
+        <title>K&K Security</title>
+
+        <style>
+            .popup-leave-request{
+                display: flex;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="loader-container">
+            <div class="loader">
+                <div class="loader2">
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper">
+            <div class="other-things">
+
+
+                
+
+                <div class="popup-leave-request-form-edition">
+                    <div class="this-popup-leave-request">
+                        <div class="close-request">
+                            
+                        </div>
+                        <img src="img/logoburger.png" alt="" class="leave-request-logo">
+                        <div class="text-leave-request">
+                            Вкажіть ваші контактні данні та ваше питання
+                        </div>
+                        <form class="form-leave-request" id="leave-request_form" method="post">
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="person-circle"></ion-icon>
+                                </label>
+                                <input type="text" class="input-request input-request-name" placeholder="Ваше ім'я" id="user_name" name="user_name" required>
+                            </div>
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="call"></ion-icon>
+                                </label>
+                                <input type="tel" class="input-request input-request-phone" placeholder="Ваш номер телефону" id="user_phone" name="user_phone" required>
+                            </div>
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="filter"></ion-icon>
+                                </label>
+                                <select class="input-request" name="user_commer" id="user_commer">
+                                    <option value="Приватна власність" selected>Приватна власність</option>
+                                    <option value="Комерційний об'єкт" selected>Комерційний об'єкт</option>
+                                    <option value="Інше" selected>Інше</option>
+                                    <option value="Інше" selected>Виберіть об'єкт</option>
+                                </select>
+                            </div>
+                            <div class="name-input div-request">
+                                <label class="label-request" for="">
+                                    <ion-icon name="help-circle"></ion-icon>
+                                </label>
+                                <textarea class="input-request" placeholder="Ваше питання.." name="user_question" id="user_question"></textarea>
+                            </div>
+
+                            <input type="button" class="btn-leave-request" value="Залишити заявку" id="btn-send-request">
+
+
+                            <div class="after-success-send">
+                                <div class="alert-success">
+                                    Обов'язково заповніть поля ім'я та номер телефону.
+                                </div>
+                                <div class="thanks__block">
+                                    <div class="thanks">
+                                        Дякуємо за заявку!
+                                    </div>
+                                    <p>
+                                        Найближчим часом з вами зв'яжеться наш менеджер.
+                                    </p>
+                            </div>
+                            </div>
+                        </form>
+
+                        
+
+                    </div>
+
+                    <div class="return-to-smth">
+                        <a href="https://security-market.in.ua/ua/" class="return-to-shop return-to">
+                            Повернутись до магазину
+                        </a>
+                        <a href="https://kik.net.ua/" class="return-to-kiknet return-to">
+                            Повернутись на головну
+                        </a>
+                    </div>
+                </div>
+
+                        
+
+                    </div>
+                </div>
+
+
+
+
+                
+
+
+
+            </div>
+        </div>
+        <script src="https://unpkg.com/imask"></script>
+        <script src="js/script.js"></script>
+        <script src="js/script2.js"></script>
+        <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="js/common.js"></script>
+        <!-- <script src="js/common-email-or-phone.js"></script> -->
+        <script type="module">
+            import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
+          
+            const swiper = new Swiper('.swiper', {
+        // Optional parameters
+            direction: 'horizontal',
+            loop: false,
+        
+            // If we need pagination
+            
+            // Navigation arrows
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+            },
+        
+            // And if we need scrollbar
+            pagination: {
+            el: '.swiper-pagination',
+            clickable:true,
+            },
+
+            autoplay:{
+                delay:6000,
+                disableOnInteraction:false
+            },
+
+            speed:700,
+            });
+
+          </script>
+          <!-- <script>
+            var r = window.location.search;
+            var m = r.replace('?name=','');
+            var s = m.replace('+',' ');
+            var str = document.getElementById("link-name-product-first");
+            var strValue = document.getElementById("link-name-product-first").value;
+            var result = document.getElementById("link-name-product-first").innerHTML = s;
+            
+            localStorage.setItem('str',strValue);
+            document.getElementById('link-name-product-first').innerHTML = result;
+          </script> -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+    
+</html>
