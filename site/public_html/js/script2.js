@@ -48,7 +48,7 @@ function phonePopup() {
     } else {
       x.style.display = "none";
       
-      document.querySelector(".phone-for-popup").innerHTML = '<ion-icon name="call-outline"></ion-icon>';
+      document.querySelector(".phone-for-popup").innerHTML = '<ion-icon name="call"></ion-icon>';
       
       document.querySelector(".to-top").style.display = "flex";
       
@@ -107,7 +107,7 @@ function phonePopup() {
 
         x.style.display = "none";
 
-        document.querySelector(".phone-for-popup").innerHTML = '<ion-icon name="call-outline"></ion-icon>';
+        document.querySelector(".phone-for-popup").innerHTML = '<ion-icon name="call"></ion-icon>';
       
         
 

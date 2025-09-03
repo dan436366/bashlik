@@ -1,251 +1,347 @@
-
-
 .first-section-of-contacts-obg {
     max-width: 1200px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(255, 204, 0, 0.1);
+    
+    width: 100%; /* Додано для повної ширини */
     margin: 0 auto;
-    padding: 20px;
 }
 
 .first-section-of-contacts {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-    align-items: stretch;
+    grid-template-columns: 1fr 400px;
+    min-height: 350px;
+    gap: 0;
 }
 
 .map-of-company {
-    background: white;
-    border-radius: 15px;
-    padding: 20px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px 0 0 20px;
+    min-height: 350px; /* Додано мінімальну висоту */
+}
+
+.map-of-company::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(255, 204, 0, 0.1) 0%, rgba(255, 204, 0, 0.05) 100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .map {
     width: 100%;
-    height: 280px;
+    height: 100%;
+    min-height: 350px; /* Додано мінімальну висоту */
     border: none;
-    border-radius: 10px;
-    flex-grow: 1;
+    filter: grayscale(20%) contrast(1.1);
+    transition: filter 0.3s ease;
+    object-fit: cover; /* Забезпечує правильне покриття */
+}
+
+.map:hover {
+    filter: grayscale(0%) contrast(1.2);
 }
 
 .contacts-and-other {
-    background: #333333;
-    border-radius: 15px;
+    background: linear-gradient(145deg, #222 0%, #333 100%);
     padding: 30px;
-    color: white;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: 100%;
+    justify-content: space-between;
+    position: relative;
+    min-height: 350px; /* Додано мінімальну висоту */
 }
 
-.name-of-contacts {
+.contacts-and-other::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ffcc00, #ff9900);
+    border-radius: 0 2px 2px 0;
+}
+
+.name-of-contacts,
+.found-us-contacts-name,
+.name-of-email-name {
     display: flex;
     align-items: center;
-    font-size: 1.5rem;
+    gap: 12px;
+    font-size: 18px;
     font-weight: 600;
-    margin-bottom: 20px;
-    color: #FFD700;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 10px;
+    color: #ffcc00;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
-.name-of-contacts i {
-    margin-right: 10px;
-    font-size: 1.3rem;
+.name-of-contacts ion-icon,
+.found-us-contacts-name ion-icon,
+.name-of-email-name ion-icon {
+    margin-bottom: 9px;
+    font-size: 24px;
+    color: #ffcc00;
+    filter: drop-shadow(0 2px 4px rgba(255, 204, 0, 0.3));
 }
 
 .telephone-list {
     list-style: none;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .telephone-list-item {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .link-telephone-list-item {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 12px 15px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 15px;
     border-radius: 8px;
-    transition: all 0.3s ease;
     display: block;
-    background: #444444;
-    border: 2px solid transparent;
+    transition: all 0.3s ease;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+
+.link-telephone-list-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 204, 0, 0.1), transparent);
+    transition: left 0.5s ease;
 }
 
 .link-telephone-list-item:hover {
-    background: #FFD700;
-    color: #333333;
-    border-color: #FFD700;
+    color: #ffcc00;
+    background: rgba(255, 204, 0, 0.1);
+    border-color: rgba(255, 204, 0, 0.3);
     transform: translateX(5px);
+}
+
+.link-telephone-list-item:hover::before {
+    left: 100%;
 }
 
 .found-us-contacts {
     margin-bottom: 25px;
 }
 
-.found-us-contacts-name {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #FFD700;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 10px;
-}
-
-.found-us-contacts-name i {
-    margin-right: 10px;
-    font-size: 1.3rem;
-}
-
-.found-us-contacts-link {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-    padding: 12px 15px;
-    border-radius: 8px;
-    background: #444444;
-    display: block;
-    transition: all 0.3s ease;
-    border: 2px solid transparent;
-}
-
-.found-us-contacts-link:hover {
-    background: #FFD700;
-    color: #333333;
-    border-color: #FFD700;
-    transform: translateX(5px);
-}
-
-.name-of-email {
-    margin-bottom: 20px;
-}
-
-.name-of-email-name {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #FFD700;
-    border-bottom: 2px solid #FFD700;
-    padding-bottom: 10px;
-}
-
-.name-of-email-name i {
-    margin-right: 10px;
-    font-size: 1.3rem;
-}
-
+.found-us-contacts-link,
 .name-of-email-link {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
-    font-size: 1.1rem;
-    padding: 12px 15px;
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 10px 15px;
     border-radius: 8px;
-    background: #444444;
     display: block;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.05);
+    position: relative;
+    overflow: hidden;
 }
 
+.found-us-contacts-link::before,
+.name-of-email-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255, 204, 0, 0.1), rgba(255, 204, 0, 0.2));
+    transition: width 0.3s ease;
+    z-index: 0;
+}
+
+.found-us-contacts-link:hover,
 .name-of-email-link:hover {
-    background: #FFD700;
-    color: #333333;
-    border-color: #FFD700;
-    transform: translateX(5px);
+    color: #ffcc00;
+    border-color: rgba(255, 204, 0, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 204, 0, 0.2);
 }
 
-
-.section-header{
-    padding-top: 60px;
+.found-us-contacts-link:hover::before,
+.name-of-email-link:hover::before {
+    width: 100%;
 }
 
-/* Адаптивний дизайн */
-@media (max-width: 1024px) {
+.found-us-contacts-link span,
+.name-of-email-link span {
+    position: relative;
+    z-index: 1;
+}
+
+.section-header {
+    margin: 60px 0;
+}
+
+/* Покращені медіа запити */
+@media (max-width: 1234px) {
+    .first-section-of-contacts-obg {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+        max-width: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .first-section-of-contacts-obg {
+        margin: 0 15px;
+        width: calc(100% - 30px);
+        max-width: none;
+    }
+    
     .first-section-of-contacts {
-        gap: 25px;
+        grid-template-columns: 1fr 300px; /* Зменшена ширина правої колонки */
+    }
+}
+
+/* Покращений респонзивний дизайн для планшетів */
+@media (max-width: 768px) {
+    .first-section-of-contacts-obg {
+        margin: 0 10px;
+        width: calc(100% - 20px);
+        max-width: none;
+    }
+    
+    .first-section-of-contacts {
+        grid-template-columns: 1fr;
+        min-height: auto;
+        width: 100%;
+    }
+    
+    .map-of-company {
+        height: 300px;
+        min-height: 300px;
+        border-radius: 20px 20px 0 0;
+        width: 100%;
     }
     
     .map {
-        height: 200px;
+        height: 100%;
+        min-height: 300px;
+        width: 100%;
     }
-}
-
-@media (max-width: 768px) {
-    .first-section-of-contacts {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .map {
-        height: 180px;
-    }
-
+    
     .contacts-and-other {
+        border-radius: 0 0 20px 20px;
         padding: 25px;
+        min-height: auto;
+        width: 100%;
+        box-sizing: border-box;
     }
-
-    .name-of-contacts,
-    .found-us-contacts-name,
-    .name-of-email-name {
-        font-size: 1.3rem;
-    }
-
-    .link-telephone-list-item,
-    .found-us-contacts-link,
-    .name-of-email-link {
-        font-size: 1rem;
-        padding: 10px 12px;
+    
+    .contacts-and-other::before {
+        width: 100%;
+        height: 4px;
+        top: 0;
+        left: 0;
+        border-radius: 2px 2px 0 0;
+        background: linear-gradient(to right, #ffcc00, #ff9900);
     }
 }
 
+/* Додатковий медіа запит для дуже маленьких екранів */
 @media (max-width: 480px) {
     .first-section-of-contacts-obg {
-        padding: 15px;
+        margin: 0 5px;
+        width: calc(100% - 10px);
+        max-width: none;
+        border-radius: 15px;
     }
-
+    
     .map-of-company {
-        padding: 15px;
+        border-radius: 15px 15px 0 0;
+        height: 250px;
+        min-height: 250px;
+        width: 100%;
     }
-
+    
     .map {
-        height: 160px;
+        min-height: 250px;
+        width: 100%;
     }
-
+    
     .contacts-and-other {
         padding: 20px;
+        border-radius: 0 0 15px 15px;
+        width: 100%;
+        box-sizing: border-box;
     }
-
+    
     .name-of-contacts,
     .found-us-contacts-name,
     .name-of-email-name {
-        font-size: 1.2rem;
-        flex-direction: column;
-        text-align: center;
-        gap: 5px;
+        font-size: 16px;
     }
-
-    .name-of-contacts i,
-    .found-us-contacts-name i,
-    .name-of-email-name i {
-        margin-right: 0;
-        margin-bottom: 5px;
-    }
-
-    .link-telephone-list-item,
-    .found-us-contacts-link,
-    .name-of-email-link {
-        font-size: 0.95rem;
-        padding: 10px;
-        text-align: center;
+    
+    .link-telephone-list-item {
+        font-size: 14px;
+        padding: 6px 12px;
     }
 }
+
+/* Додаткові стилі для усунення можливих відступів */
+@media (max-width: 768px) {
+    /* Переконуємося, що батьківські елементи не додають зайвих відступів */
+    .first-section-of-contacts-obg * {
+        box-sizing: border-box;
+    }
+    
+    /* Видаляємо можливі відступи з iframe карти */
+    .map-of-company iframe,
+    .map-of-company .map {
+        margin: 0 !important;
+        padding: 0 !important;
+        border: 0 !important;
+        display: block;
+        width: 100% !important;
+        height: 100% !important;
+    }
+}
+
+/* Глобальне скидання для контейнера */
+.first-section-of-contacts-obg,
+.first-section-of-contacts,
+.map-of-company,
+.map {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+/* Pulse animation для іконок */
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Розкоментуйте, якщо потрібна анімація пульсації при ховері
+.name-of-contacts ion-icon:hover,
+.found-us-contacts-name ion-icon:hover,
+.name-of-email-name ion-icon:hover {
+    animation: pulse 0.6s ease-in-out;
+}
+*/
