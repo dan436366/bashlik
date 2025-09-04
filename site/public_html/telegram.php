@@ -7,8 +7,8 @@
   $phone = $_POST['user_phone'];
   $email = $_POST['user_commer'];
   $question = $_POST['user_question'];
-  $token = "5018924912:AAEBvkDLNmKBHXpzwuOlYz4cjpgECzbk4gw";
-  $chat_id = "-618956066";
+  $token = "8406421868:AAHvY61B2wvQIg0XRJ6ddxv4q5tYWu7p-ks";
+  $chat_id = "-1003064881816";
   $txt = "";
   $arr = array(
     'Імя користувача: ' => $name,
